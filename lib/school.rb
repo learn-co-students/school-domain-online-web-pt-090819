@@ -3,8 +3,8 @@
 class School
   attr_accessor :roster
   
-  def initialize(name)
-    @name = name
+  def initialize(school_name)
+    @name = school_name
     @roster = {}
   end
   
@@ -14,6 +14,7 @@ class School
       roster[grade] = []
     end
     roster[grade] << student_name
+
     
 #    if roster[grade]
 #      roster[grade] << student_name
